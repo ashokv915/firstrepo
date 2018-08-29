@@ -15,15 +15,18 @@ public class StreamEx {
         al.add(4);
         al.add(3);
         Stream<Integer> s=al.stream();
+        s.map(item->item*2).forEach(z->{
+            System.out.println(z);
+        });
 
         //s.forEach(m->{
           //  System.out.println(m);
         //});
 
-        System.out.println("Filter");
-        s.filter(x-> x>2).forEach(m->{
-            System.out.println(m);
-        });
+        //System.out.println("Filter");
+        //s.filter(x-> x>2).forEach(m->{
+          //  System.out.println(m);
+        //});
 
         ArrayList<String> al1=new ArrayList<>();
         al1.add("one");
