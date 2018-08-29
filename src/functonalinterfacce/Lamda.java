@@ -14,7 +14,7 @@ public class Lamda  {
         //with lamda
         int width=10;
         Drawable d2=(x,y)->{
-            System.out.println("Drawing "+width);
+            System.out.println("Drawing "+width+" name "+x+" Number "+y);
         };
         d2.draw("circle",2);
     }

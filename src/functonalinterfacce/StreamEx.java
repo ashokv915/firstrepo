@@ -1,6 +1,7 @@
 package functonalinterfacce;
 
 import java.util.ArrayList;
+import java.util.stream.Stream;
 
 /**
  * Created by dell on 29/8/18.
@@ -8,6 +9,16 @@ import java.util.ArrayList;
 public class StreamEx {
 
     public static void main(String[] args) {
+
+        ArrayList<Integer> al=new ArrayList<>();
+        al.add(2);
+        al.add(4);
+        al.add(3);
+        Stream<Integer> s=al.stream();
+
+        s.forEach(m->{
+            System.out.println(m);
+        });
 
     }
 }
