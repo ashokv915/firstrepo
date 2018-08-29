@@ -16,9 +16,23 @@ public class StreamEx {
         al.add(3);
         Stream<Integer> s=al.stream();
 
-        s.forEach(m->{
+        //s.forEach(m->{
+          //  System.out.println(m);
+        //});
+
+        System.out.println("Filter");
+        s.filter(x-> x>2).forEach(m->{
             System.out.println(m);
         });
+
+        ArrayList<String> al1=new ArrayList<>();
+        al1.add("one");
+        al1.add("two");
+        al1.add("three");
+        al1.stream().filter(e->e.contains("t")).forEach(q->{
+            System.out.println(q);
+        });
+
 
     }
 }
