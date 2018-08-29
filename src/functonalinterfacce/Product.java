@@ -24,7 +24,7 @@ public class Product {
         al.add(new Product(125,600,"C"));
 
         Stream<Product> s=al.stream();
-        s.forEach(m->{
+        s.filter(x ->x.price>499).forEach(m->{
             System.out.println("Product id "+m.pid+" Product Price "+m.price+" Product name "+m.pname);
         });
     }
