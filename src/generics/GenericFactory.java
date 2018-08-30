@@ -33,7 +33,18 @@ public class GenericFactory<T> {
 
         Product p=new GenericFactory<Soap>(Soap.class).getObject();
         System.out.println(p.getName());
+
+        Product p1=new GenericFactory<Oil>(Oil.class).getObject();
+        System.out.println(p1.getName());
     }
 
 
+}
+
+class Oil extends Product{
+
+    @Override
+    public String getName() {
+        return "Oil";
+    }
 }
