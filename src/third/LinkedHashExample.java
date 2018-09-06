@@ -22,14 +22,21 @@ public class LinkedHashExample {
         link.put(3,new LinkedHashExample(2,"qwe","A"));
         link.put(5, new LinkedHashExample(4,"asd","B"));
         link.put(6, new LinkedHashExample(6,"axc","C"));
+        link.put(2,new LinkedHashExample(7,"cvb","V"));
 
         System.out.println(link.containsKey(5));
         System.out.println(link.containsValue("A"));
+        System.out.println(link.containsValue("ty"));
 
         for (Map.Entry obj:link.entrySet())
         {
             LinkedHashExample e= (LinkedHashExample) obj.getValue();
-            System.out.println();
+            System.out.println(e.name);
+        }
+        for (Map.Entry obj:link.entrySet())
+        {
+            LinkedHashExample e1= (LinkedHashExample) obj.getValue();
+            System.out.println(obj.getKey());
         }
 
 

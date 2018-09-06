@@ -40,8 +40,21 @@ public class HashExample {
         ts.add("zen");
         ts.add("liya");
         ts.add("anu");
+        ts.add("bag");
 
         for (String obj:ts)
+        {
+            System.out.println(obj);
+        }
+
+        HashSet<String> hs=new HashSet<>();
+        hs.add("Anm");
+        hs.add("Yud");
+        hs.add("Anm");
+        hs.add("anm");
+        hs.add("Nmd");
+        hs.add("Bag");
+        for (String obj:hs)
         {
             System.out.println(obj);
         }
